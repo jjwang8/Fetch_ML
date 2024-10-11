@@ -60,7 +60,6 @@ model = LSTM()
 model.to(device)
 criterion = nn.MSELoss()  
 optimizer = torch.optim.Adam(model.parameters(), lr=lr)
-scheduler = torch.optim.lr_scheduler.ExponentialLR(optimizer, gamma=1)
 
 # Training loop
 best_valid_loss = float('inf') 
@@ -79,8 +78,6 @@ for epoch in range(num_epochs):
         nn.utils.clip_grad_norm_(model.parameters(), max_norm=1.0)
         optimizer.step()
         train_losses.append(loss.item())
-    scheduler.step()
-
     # Validation
     model.eval()
     valid_losses = []
