@@ -6,7 +6,7 @@ Welcome to the Receipt Scan Predictor! This project uses a Long Short-Term Memor
 
 At Fetch Rewards, monitoring the number of scanned receipts is crucial for business insights. This project addresses the challenge of predicting monthly scanned receipts using an LSTM model, showcasing machine learning expertise without relying on high-level libraries like scikit-learn or a simple linear regression.
 
-The model itself is trained based on the past x days to predict the price for the current day, for example given the past 60 days we want to predict the number of receipts today. Each sequence consists of the price of a certain day and the number of days starting from 2021, standardized with log1p and z-score for price and just z-score for day number. 
+The model itself is trained based on the past x days to predict the price for the current day, for example given the past 60 days we want to predict the number of receipts today. Each sequence consists of the price of a certain day and the number of days starting from 2021, standardized with log1p and z-score for price and just z-score for day number.
 
 ## Model Details
 
@@ -47,8 +47,8 @@ To run this project locally, follow these steps:
 1. **Clone the Repository**
 
    ```bash
-   git clone XXX
-   cd YYY
+   git clone https://github.com/jjwang8/Fetch_ML.git
+   cd Fetch_ML
    ```
 2. **Install Dependencies**
 
