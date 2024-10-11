@@ -132,4 +132,4 @@ if __name__ == '__main__':
     # Load data and model before starting the app
     scaled, davg, dstd, dscale, ddavg, ddstd, features_scale, monthly_actuals, data = load_data()
     model = load_model().to(device)
-    app.run(debug=True)
+    app.run(debug=True, host='0.0.0.0')

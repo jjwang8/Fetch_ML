@@ -103,7 +103,8 @@ Access the app at `http://localhost:5000/`.
 
 ## Notes
 
-- **Simplicity vs. Complexity**: While an LSTM model is powerful, sometimes simpler models can perform just as well. In fact, a simple least squares linear regression might have done a decent job—proving that sometimes, you don't need a neural network to solve every problem!
-- **Extensibility**: The app is designed with flexibility in mind. You can easily extend it by experimenting with different models or adding more features.
+- While an LSTM model is powerful, sometimes simpler models can perform just as well. In fact, a simple least squares linear regression might have done a decent job, proving that sometimes, you don't need a neural network to solve every problem!
+- Initially I had tried out an input size of 1, but the model wasn't generalizing to the linear trend very well after 2021 so I added the day feature so that the model can receive more context for when it's predicting.
+- Improvements: With more time or as an official project 
 
 Thank you for checking out the Receipt Scan Predictor. We hope it predicts not just receipts but also a chance at an interview!
